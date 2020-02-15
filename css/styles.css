@@ -6,27 +6,29 @@
 
 body{
     background-image:url(../images/blackbulls.jpg);
+    font-size: 100%;
+    
     
 }
 #wrapper{
     width: 940px;
-    margin: 0px auto 20px auto;
-    background: #F2D091;
+    margin: 0px auto 0px auto;
+    background: rgba(242, 208, 145, .85);
 }
 
 header{
     background: #401111; 
 }
 
-header p{
-     
+.home #primary li:nth-child(1) a,
+.big #primary li:nth-child(2){
+    background: darkgreen;
 }
 
 #primary{
     height: 50px;
     line-height: 50px;
     background: #0D0000;
-/*    line-height: 50px;*/
 }
 
 #primary li{
@@ -39,6 +41,7 @@ header p{
 #primary a{
     text-decoration: none;
     display: block;
+    color: #8C735D;
 }
 #primary a:hover{
     background: darkgreen;
@@ -50,35 +53,69 @@ main{
 main p{
     margin-right: 20px;
     margin-left: 20px;
+    margin-bottom: 30px;
+    line-height: 1.4;
 }
 .right{
     float: right;
     height: 200px;
-    border: #0D0000 solid 2px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 20px;
+    padding-left: 20px;
 }
 .left{
     float: left;
     height: 300px;
+    padding-right: 20px;
 }
 h1, h2{
     margin-left: 20px;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    color: #401111;
+}
+h3{
+    margin-bottom: 20px;
+    color: #401111;
+    
 }
 aside {
     float: right;
-    width: 320px;
+    width: 300px;
     margin-top: 30px;
     margin-right: 20px;
+    font-size: .9em;
+}
+aside p{
+    line-height: 1.4;
+    
 }
 footer{
-    height: 50px;
+    height: 60px;
+    line-height: 50px;
     clear: both;  
+    background: #401111;
+    font-size: .8em;
+    border-top: 1px dotted #666; 
+}
+footer ul{
+    float: right;
+}
+footer li{
+    float: left;
+    list-style-type: none;
+    margin-right: 30px;
+    background: #401111; 
+    color: #8C735D;
+}
+footer a{
+    color: #8C735D;
+}
+footer img{
+    height:30px;
+    margin-top: 8px;
 }
 img{
-    max-width: 100%;
+ max-width: 100%;
     /*ensures that pic fits box*/
 }
 #logo{
